@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+.Dossier {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 20px;
+  background-color: brown;
+  margin: 25px auto; 
+  border-radius: 15px; 
+  width: 90%; 
+  padding: 10px; 
+}
+.LesDossiers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 15px; 
+  width: 70%;
+  padding: 20px;
+  gap: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TitreDossier {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Utilisateur {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: pink;
+  border-radius: 15px; 
+  width: 20%;
+}
+
+.avatar {
+  width: 192px;
+  height: 192px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.Folder-container {
+  position: relative;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8a2be2; 
   color: white;
+  border-radius: 10px;
+  padding: 15px;
+  width: calc(48% - 10px); 
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100px;
+}
+.Folder-title {
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.Folder-actions {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 5px;
+  width: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Folder-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  border-radius: 50%; 
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.Folder-actions button:hover {
+  opacity: 0.8;
+}
+
+.btn-modifier {
+  background-color: #FF91D9;
+}
+
+.btn-supprimer {
+  background-color: #E079BD;
+}
+
+.folder-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.Folder-counter {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  font-size: 0.75em;
+  opacity: 0.9;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.HeaderDossiers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.btn-ajouter {
+  background-color: #8a2be2; 
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.btn-ajouter:hover {
+  transform: scale(1.1);
+}
+
+.add-icon {
+  width: 25px;
+  height: 25px;
 }
