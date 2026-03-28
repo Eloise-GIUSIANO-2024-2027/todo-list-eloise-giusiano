@@ -1,5 +1,6 @@
 import iconeModif from '../Pictures/modif.svg';
 import iconeBin from '../Pictures/bin.svg';
+
 export const Folder = ({ title, taskCount, color, onDelete, onEdit }) => {
   const cleanTitle = title.replace(/^\d+\.\s*/, '');
 
