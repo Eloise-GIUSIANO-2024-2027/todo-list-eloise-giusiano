@@ -75,15 +75,15 @@ L'application sera accessible sur [http://localhost:3000](http://localhost:3000)
 
 **Vue Tâches**
 
-![Vue Tâches](../todo-list-eloise-giusiano/src/Pictures/tache.png)
+![Vue Tâches](../src/Pictures/tache.png)
 
 **Vue Dossiers**
 
-![Vue Dossiers](../todo-list-eloise-giusiano/src/Pictures/dossier.png)
+![Vue Dossiers](../src/Pictures/dossier.png)
 
 **Menu Filtres**
 
-![Menu Filtres](../todo-list-eloise-giusiano/src/Pictures/filtre.png)
+![Menu Filtres](../src/Pictures/filtre.png)
 
 ---
 
