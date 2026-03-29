@@ -20,13 +20,19 @@ Ma TodoList est une application web développée en React. Elle permet de créer
 git clone https://github.com/Eloise-GIUSIANO-2024-2027/todo-list-eloise-giusiano.git
 ```
 
-2. **Installer les dépendances**
+2. **Installer npm**
+
+```bash
+   apt install npm
+```
+
+3. **Installer les dépendances**
 
 ```bash
 npm install
 ```
 
-3. **Lancer l'application**
+4. **Lancer l'application**
 
 ```bash
 npm start
