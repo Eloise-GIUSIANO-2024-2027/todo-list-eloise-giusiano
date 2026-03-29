@@ -18,7 +18,7 @@ export function Header({
   const [show, setShow]           = useState(false);
   const [showTache, setShowTache] = useState(false);
 
-  const [nouveauDossier, setNouveauDossier] = useState({ title: '', description: '', color: '#8a2be2' });
+  const [nouveauDossier, setNouveauDossier] = useState({ title: '', description: '', color: '#75619d' });
   const [nouvelleTache,  setNouvelleTache]  = useState({ title: '', description: '', date_echeance: '', etat: 'Nouveau', dossierId: '' });
 
   const handleClose      = () => setShow(false);
@@ -40,7 +40,7 @@ export function Header({
   const ajouterDossier = () => {
     if (nouveauDossier.title) {
       setListeDossiers([...listeDossiers, { ...nouveauDossier, id: Date.now() }]);
-      setNouveauDossier({ title: '', description: '', color: '#8a2be2' });
+      setNouveauDossier({ title: '', description: '', color: '#75619d' });
       handleClose();
     }
   };
@@ -75,10 +75,10 @@ export function Header({
       <div className="App-header">
         <div className="Utilisateur">
           <img src={monAvatar} className="avatar" alt="avatar" />
-          <p>Les projets commencent ici !</p>
+          <p className='TITRE'>Les projets commencent ici !</p>
           <div className="btn-header">
             <button className="btn-ajouter-tache" onClick={handleShowTache}>Ajouter un Tâche</button>
-            <button className="btn-ajouter-tache" onClick={handleShow}>Ajouter un Dossier</button>
+            <button className="btn-ajouter-dossier" onClick={handleShow}>Ajouter un Dossier</button>
             <button className="btn-reset" onClick={resetData}>Réinitialiser</button>
           </div>
         </div>
@@ -109,18 +109,18 @@ export function Header({
             <Form.Group className="mb-3">
               <Form.Label>Couleur</Form.Label>
               <Form.Select onChange={(e) => setNouveauDossier({ ...nouveauDossier, color: e.target.value })}>
-                <option value="#8a2be2">Violet</option>
-                <option value="#ffa500">Orange</option>
-                <option value="#ffc0cb">Rose</option>
-                <option value="#4cc9f0">Bleu ciel</option>
-                <option value="#2ecc71">Vert</option>
+                <option value="#75619d">Violet</option>
+                <option value="#e87e47">Orange</option>
+                <option value="#fb6f92">Rose</option>
+                <option value="#8fb6d8">Bleu ciel</option>
+                <option value="#6ea89e">Vert</option>
               </Form.Select>
             </Form.Group>
           </Form>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>Fermer</Button>
-          <Button variant="primary" onClick={ajouterDossier} style={{ backgroundColor: '#8a2be2', border: 'none' }}>
+          <Button variant="primary" onClick={ajouterDossier} style={{ backgroundColor: '#75619d', border: 'none' }}>
             Ajouter
           </Button>
         </Modal.Footer>
@@ -185,7 +185,7 @@ export function Header({
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleCloseTache}>Fermer</Button>
-          <Button variant="primary" onClick={ajouterTache} style={{ backgroundColor: '#8a2be2', border: 'none' }}>
+          <Button variant="primary" onClick={ajouterTache} style={{ backgroundColor: '#75619d', border: 'none' }}>
             Ajouter
           </Button>
         </Modal.Footer>

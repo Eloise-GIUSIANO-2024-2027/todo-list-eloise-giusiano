@@ -1,26 +1,16 @@
 .Dossier {
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   justify-content: center;
   gap: 20px;
-  background-color: brown;
   margin: 25px auto; 
   border-radius: 15px; 
   width: 90%; 
   padding: 10px; 
 }
-.LesDossiers {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: white;
-  border-radius: 15px; 
-  width: 70%;
-  padding: 20px;
-  gap: 15px;
-}
+
 
 .TitreDossier {
   margin: 0;
@@ -40,7 +30,7 @@
   flex-direction: row;
   align-items: center;
   gap: 15px;
-  background-color: pink;
+  background-color: #ffc2d1;
   border-radius: 0;
   width: 100%;
   padding: 10px 20px;
@@ -48,11 +38,17 @@
 }
 
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 0;
+}
+
+.TITRE {
+  font-size: 2px;
+  font-weight: 700;
+  color: #fb6f92;
 }
 
 .Utilisateur img, .Utilisateur p {
@@ -67,8 +63,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #8a2be2; 
-  color: white;
+  color: #ffe5ec;
   border-radius: 10px;
   padding: 15px;
   width: calc(48% - 10px); 
@@ -80,6 +75,7 @@
   position: relative;
   min-height: 100px;
 }
+
 .Folder-title {
   font-weight: 500;
 }
@@ -109,11 +105,11 @@
 }
 
 .btn-modifier {
-  background-color: #FF91D9;
+  background-color: #ff8fab;
 }
 
 .btn-supprimer {
-  background-color: #E079BD;
+  background-color: #ff8fab;
 }
 
 .folder-icon {
@@ -141,7 +137,7 @@
 }
 
 .btn-ajouter {
-  background-color: #8a2be2; 
+  background-color: #75619d; 
   border: none;
   border-radius: 8px;
   padding: 5px 10px;
@@ -164,6 +160,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: #ffe5ec;
   padding: 1rem;
 }
 
@@ -212,7 +209,7 @@
   margin-right: 20px;
   cursor: pointer;
   flex-shrink: 0;
-  accent-color: #8a2be2;
+  accent-color: #fb6f92;
 }
 
 .tache-done .tache-title {
@@ -229,6 +226,7 @@
   flex-direction: row;
   gap: 10px;
   padding: 0 1rem 0.5rem;
+  background-color: #ffe5ec;
 }
 
 .btn-ajouter-tache {
@@ -248,8 +246,9 @@
   display: flex;
   gap: 0;
   padding: 0 1rem;
-  border-bottom: 2px solid #e5e7eb;
+  border-bottom: 2px solid #b099ad;
   margin-bottom: 1rem;
+  background-color: #ffe5ec;
 }
 
 .onglet-btn {
@@ -266,12 +265,12 @@
 }
 
 .onglet-btn:hover {
-  color: #8a2be2;
+  color: #fb6f92;
 }
 
 .onglet-actif {
-  color: #8a2be2;
-  border-bottom-color: #8a2be2;
+  color: #fb6f92;
+  border-bottom-color: #fb6f92;
 }
 
 .dossiers-grille {
@@ -283,5 +282,99 @@
 }
 
 .App-footer {
-  background-color: #FF91D9;
+  background-color: #ffc2d1;
+  width: 100%;
+  padding: 8px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  color: #fb6f92;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffe5ec;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  background-color: #ffe5ec;
+}
+
+.btn-ajouter-tache {
+  background-color: #fff;
+  color: #fb6f92;
+  border: solid 3px;
+  border-color: #fb6f92;
+  border-radius: 15px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.btn-ajouter-dossier {
+  background-color: #fff;
+  color: #fb6f92;
+  border: solid 3px;
+  border-color: #fb6f92;
+  border-radius: 15px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.btn-reset {
+  background-color: #fff;
+  color: #fb6f92;
+  border: solid 3px;
+  border-color: #fb6f92;
+  border-radius: 15px;
+  padding: 6px 14px;
+  cursor: pointer;
+}
+
+.HeaderMain {
+  padding-left: 5px;
+  font-size: 1.5em;
+  color: #fb6f92;
+  background-color: #ffe5ec;
+}
+
+.btn-action {
+  background-color: #fff;
+  color: #fb6f92;
+  border: solid 2px;
+  border-color: #fb6f92;
+  border-radius: 8px;
+  padding: 3px 7px;
+  cursor: pointer;
+}
+
+.dropdown-item-custom {
+  background-color: #fff;
+  color: #fb6f92;
+  border: solid 2px;
+  border-color: #fb6f92;
+  border-radius: 8px;
+  padding: 3px 7px;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.dropdown-menu-custom {
+  color: #fb6f92;
+  padding: 3px 7px;
+  cursor: pointer;
 }
